@@ -1,10 +1,6 @@
-const getLength = (value: string | any[]) => {
-    if (Array.isArray(value)) {
-        return value.length
-    } else if (typeof value === 'string') {
-        return value.length
-    }
-    return 0
-}
-console.log(getLength("typescriptff"));
-console.log(getLength([10, 20, 30, 40, 5555]))
+
+const person1 = new Person('John Doe', 30);
+console.log(person1.getDetails());
+
+const person2 = new Person('Alice', 25);
+console.log(person2.getDetails());
