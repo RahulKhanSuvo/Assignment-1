@@ -6,3 +6,6 @@ const formatValue = (value: number | string | boolean): string | number | boolea
     } return !value
 
 }
+console.log(formatValue('hello'));
+console.log(formatValue(5));
+console.log(formatValue(true));
