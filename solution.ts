@@ -6,3 +6,12 @@ const formatValue = (value: number | string | boolean): string | number | boolea
     } return !value
 
 }
+
+const getLength = (value: string | any[]) => {
+    if (Array.isArray(value)) {
+        return value.length
+    } else if (typeof value === 'string') {
+        return value.length
+    }
+    return 0
+}
