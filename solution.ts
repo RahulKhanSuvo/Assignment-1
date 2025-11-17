@@ -35,8 +35,13 @@ interface Items {
 const filterByRating = (items: Items[]): Items[] => {
     return items.filter(items => items.rating >= 4)
 }
-const books = [
-    { title: "Book A", rating: 4.5 },
-    { title: "Book B", rating: 3.2 },
-    { title: "Book C", rating: 5.0 }
-];
+
+interface Users {
+    id: number;
+    name: string;
+    email: string;
+    isActive: boolean;
+}
+const filterActiveUsers = (users: Users[]) => {
+    return users.filter(user => user.isActive)
+}

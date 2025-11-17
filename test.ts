@@ -1,13 +1,8 @@
-interface Items {
-    title: string
-    rating: number
-}
-const filterByRating = (items: Items[]): Items[] => {
-    return items.filter(items => items.rating >= 4)
-}
-const books = [
-    { title: "Book A", rating: 4.5 },
-    { title: "Book B", rating: 3.2 },
-    { title: "Book C", rating: 5.0 }
+
+const users = [
+    { id: 1, name: 'Rakib', email: 'rakib@example.com', isActive: true },
+    { id: 2, name: 'Asha', email: 'asha@example.com', isActive: false },
+    { id: 3, name: 'Rumi', email: 'rumi@example.com', isActive: true },
 ];
-console.log(filterByRating(books));
+
+console.log(filterActiveUsers(users));
