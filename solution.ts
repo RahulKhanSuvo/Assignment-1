@@ -56,3 +56,24 @@ const printBookDetails = (book: Book): void => {
     console.log(`Title: ${book.title}, Author: ${book.author}, Published: ${book.publishedYear}, Available: ${availability}`);
 
 }
+
+const getUniqueValues = (arr1: (string | number)[], arr2: (string | number)[]): (string | number)[] => {
+    const result: (string | number)[] = [];
+    for (let item of arr1) {
+        let exists = false;
+        for (let r of result) {
+            if (r === item) exists = true;
+        }
+        if (!exists) result.push(item);
+    }
+
+    for (let item of arr2) {
+        let exists = false;
+        for (let r of result) {
+            if (r === item) exists = true;
+        }
+        if (!exists) result.push(item);
+    }
+
+    return result;
+}
