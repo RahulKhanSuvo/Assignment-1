@@ -4,7 +4,7 @@
 
 সহজভাবে বলতে গেলে, interface আর type দুটোই object বা class-এর structure define করতে ব্যবহার করা হয়।  
 তবে পার্থক্য হলো, interface একাধিকবার declare করলে merge হয়ে যায়, আর type একবার define করলে merge হয় না।  
-Interface মূলত class বা object-এর shape define করার জন্য, আর type alias দিয়ে আমরা object ছাড়াও union বা intersection type বানাতে পারি।  
+Interface মূলত class বা object-এর shape define করার জন্য ।
 
 ---
 ### 2. What is the use of the keyof keyword in TypeScript? Provide an example?
